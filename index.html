@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin matcher</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="section-bg" style="background-color: #10101B;">
+    <section class="container mt-5 px-4">
+        <div class="row">
+            <!-- Generate section  -->
+            <div class="col-md-6 p-3">
+                <div class="custom-height custom-display p-5">
+                <input id="generate-display" class="from-control text-center custom-input w-75 mb-5" type="text">
+                <button id="generate-btn" class="custom-btn">Generate <br> pin</button>
+                </div>
+            </div>
+            <!-- calculator section  -->
+            <div class="col-md-6 p-3 ">
+                <div class="custom-height custom-display p-5">
+                    <input id="number-input" class="from-control text-center w-75 custom-input" type="text">
+                    <div id="button-id" class="custom-row">
+                        <div class="button-row">
+                            <button class="button">7</button>
+                            <button class="button">8</button>
+                            <button class="button">9</button>
+                        </div>
+                        <div class="button-row">
+                            <button class="button">4</button>
+                            <button class="button">5</button>
+                            <button class="button">6</button>
+                        </div>
+                        <div class="button-row">
+                            <button class="button">1</button>
+                            <button class="button">2</button>
+                            <button class="button">3</button>
+                        </div>
+                        <div class="button-row">
+                            <button class="button">AC</button>
+                            <button class="button">0</button>
+                            <button class="button">.</button>
+                        </div>
+                    </div>
+                    <!-- submit section  -->
+                    <button id="submit-btn" class="btn btn-lg btn-success w-100 my-2 p-3">Submit</button>
+                    <p class="red-custom-text">3 try left</p>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- message section  -->
+        <p id="success-btn" class="text-center custom-text">Pin Matched</p>
+        <p id="fail-btn" class="text-center custom-text">Pin Doesn't Matched</p>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
